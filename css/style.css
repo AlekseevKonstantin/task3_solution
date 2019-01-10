@@ -1,7 +1,6 @@
 /* custom classes */
 body{
   background-color: #f4f8f7;
-  min-width: 850px !important;
 }
 
 a, a:hover{
@@ -70,6 +69,13 @@ a, a:hover{
 
 .kurierchikof-rs-support .custom-content-wrapper{
   background-color: #fff;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .kurierchikof-rs-support .custom-content-wrapper{
+    margin-left: 0;
+  }
 }
 
 .kurierchikof-rs-support .custom-content-item{
@@ -136,18 +142,6 @@ a, a:hover{
 }
 
 /* kurierchikof-rs-top-menu */
-.kurierchikof-rs-top-menu{
-  min-width: 850px;
-}
-
-.kurierchikof-rs-top-menu .custom-min-width-g{
-  min-width: 750px;
-}
-
-.kurierchikof-rs-top-menu .custom-min-width{
-  min-width: 650px;
-}
-
 .kurierchikof-rs-top-menu .no-word-wrap{
   white-space: nowrap;
 }
@@ -347,36 +341,12 @@ a, a:hover{
 
 
 .kurierchikof-rs-top-menu .m-l-1p{
-  margin-left: 3% !important;
+  margin-left: 3%;
 }
 
-@media (min-width: 1140px){
-  .kurierchikof-rs-top-menu .m-l-32_5p{
-    margin-left: 32.5%;
-  }
-}
-
-@media (max-width: 1170px){
-  .kurierchikof-rs-top-menu .m-l-32_5p{
-    margin-left: 26%;
-  }
-}
-
-@media (max-width: 1000px){
-  .kurierchikof-rs-top-menu .m-l-32_5p{
-    margin-left: 20%;
-  }
-}
-
-@media (max-width: 950px){
-  .kurierchikof-rs-top-menu .m-l-32_5p{
-    margin-left: 13%;
-  }
-}
-
-@media (max-width: 850px){
-  .kurierchikof-rs-top-menu .m-l-32_5p{
-    margin-left: 7%;
+@media (max-width: 992px){
+  .kurierchikof-rs-support .custom-btn-content-item{
+    margin-top: 24px !important;
   }
 }
 
@@ -394,7 +364,7 @@ a, a:hover{
 }
 
 .kurierchikof-rs-top-menu .h-100{
-  height: 100% !important;
+  height: 100%;
 }
 
 .kurierchikof-rs-top-menu .w-100p{
@@ -406,6 +376,17 @@ a, a:hover{
   width: 25%;
 }
 
+@media (max-width: 768px) {
+  .kurierchikof-rs-support .w-25p,
+  .kurierchikof-rs-support .w-75p{
+    width: 100% !important;
+  }
+
+  .do-small-direction-column{
+    flex-direction: column;
+  }
+}
+
 .kurierchikof-rs-support .w-75p{
   width: 75%;
 }
@@ -413,6 +394,55 @@ a, a:hover{
 .kurierchikof-rs-top-menu .w-216{
   width: 216px;
 }
+@media (max-width: 768px) {
+  .kurierchikof-rs-top-menu .custom-thrid-line,
+  .kurierchikof-rs-top-menu .custom-second-line,
+  .kurierchikof-rs-top-menu .custom-first-line{ 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }  
+
+  .kurierchikof-rs-top-menu .custom-second-line,
+  .kurierchikof-rs-top-menu .custom-first-line{
+    margin-left: 15px;
+  }
+
+  .kurierchikof-rs-top-menu .custom-first-line{
+    margin-top: 25px !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-second-line{
+    align-items: flex-start;
+  }
+
+  .kurierchikof-rs-top-menu .m-l-1p{
+    margin-left: 0;
+  }
+
+  .kurierchikof-rs-top-menu .w-216{
+    width: auto;
+  }
+
+  .kurierchikof-rs-top-menu .custom-m-t-10{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-small-h100{
+    height: 100% !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-align-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }  
+
+  .kurierchikof-rs-support .custom-btn-content-item{
+    margin-bottom: 15px;
+  }
+}    
 
 /* reload bootstrap styles */
 .kurierchikof-rs-support .panel-body{
@@ -478,10 +508,6 @@ a, a:hover{
   padding-bottom: 0;
 }
 
-.kurierchikof-rs-top-menu .navbar-collapse.collapse{
-  height: 100% !important;
-}
-
 .kurierchikof-rs-top-menu .navbar-form{
   margin: 0;
 }
@@ -506,6 +532,27 @@ a, a:hover{
   .kurierchikof-rs-top-menu .container,
   .kurierchikof-rs-support .container{
     width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .kurierchikof-rs-top-menu .h-100{
+    height: auto;
+  }
+
+  .kurierchikof-rs-top-menu .navbar-collapse{
+    background-color: #fff;
+  }
+  .kurierchikof-rs-top-menu .collapse.in{
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .kurierchikof-rs-top-menu .navbar-default .navbar-collapse, 
+  .kurierchikof-rs-top-menu .navbar-default .navbar-form{
+    border-color: transparent !important;
   }
 }
 
