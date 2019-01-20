@@ -95,7 +95,7 @@ font-style: normal;
 .kurierchikof-rs-support .custom-nav-title,
 .kurierchikof-rs-support .custom-nav-link {
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Myriad Pro Regular', sans-serif;
   color: #929594;
   line-height: 1.538;
@@ -271,11 +271,23 @@ font-style: normal;
   margin-top: 4px;
 }
 
-/* kurierchikof-rs-top-menu */
-
-.kurierchikof-rs-top-menu{
-  
+.kurierchikof-rs-support .m-t-28 {
+  margin-top: 28px;
 }
+
+.kurierchikof-rs-support .m-t-13{
+  margin-top: 13px;
+}
+
+.kurierchikof-rs-support .m-t-20 {
+  margin-top: 20px;
+}
+
+.kurierchikof-rs-support.m-t-n18{
+  margin-top: -18px;
+}
+
+/* kurierchikof-rs-top-menu */
 
 .kurierchikof-rs-top-menu .no-word-wrap {
   white-space: nowrap;
@@ -376,8 +388,8 @@ font-style: normal;
   padding: 0 !important;
 }
 
-.custom-nav-btn-link:active,
-.custom-nav-btn-link:focus{
+.kurierchikof-rs-top-menu .custom-nav-btn-link:active,
+.kurierchikof-rs-top-menu .custom-nav-btn-link:focus{
   background-color: #fff;
 }
 
@@ -391,7 +403,7 @@ font-style: normal;
   border: none !important;
   padding-left: 15px;
   padding-right: 15px;
-  left: -39px;
+  left: -39px !important;
   min-width: 222px; 
 }
 
@@ -419,25 +431,8 @@ font-style: normal;
   margin-bottom: 4px;
 }
 
-
 .kurierchikof-rs-top-menu .custom-dropdown-link .fas{
   margin-left: -4px;
-}
-
-.kurierchikof-rs-support .m-t-28 {
-  margin-top: 28px;
-}
-
-.kurierchikof-rs-support .m-t-13{
-  margin-top: 13px;
-}
-
-.kurierchikof-rs-support .m-t-20 {
-  margin-top: 20px;
-}
-
-.kurierchikof-rs-support.m-t-n18{
-  margin-top: -18px;
 }
 
 .kurierchikof-rs-top-menu .p-0 {
@@ -600,7 +595,7 @@ font-style: normal;
     font-size: 14px;
   }
 
-  .custom-btn-create-order{
+  .kurierchikof-rs-top-menu .custom-btn-create-order{
     font-size: 14px !important;
   }  
 }
@@ -617,23 +612,24 @@ font-style: normal;
     font-size: 16px;
   }
 
-  .custom-dropdown{
+  .kurierchikof-rs-top-menu .custom-dropdown{
     width: 95% !important;
     box-shadow: none !important;
   }
 
-  .container > .navbar-collapse{
+  .kurierchikof-rs-top-menu .container > .navbar-collapse{
 
     margin-left: 0;
     margin-right: 0;
   }
 
-  .container > .navbar-collapse::before{
+  .kurierchikof-rs-top-menu .container > .navbar-collapse::before{
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: calc(100% - 30px);
+    margin-left: 15px;
     height: 7px;
     box-shadow: 0px 7.6px 7.6px -3.9px rgba(0, 0, 0, 0.09) inset;
   }
